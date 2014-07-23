@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<div class="form-group  {{ (isset(\$errors) AND \$errors->has('${1:field}')) ? 'has-error' : '' }}">
+	{{ Form::label('${1:field}', '${2:label}', array('class' => 'col-lg-2 control-label')) }}
+	<div class="col-lg-2">
+		{{ Form::select('${1:field}', \$${3:array},  Input::old('${1:field}'${4}), array('class' => 'form-control' )) }}
+		@include('partials.validators.message_field', array('field' => '${1:field}'))
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lvform</tabTrigger>
+	<description>Laravel Form Select Horizontal</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

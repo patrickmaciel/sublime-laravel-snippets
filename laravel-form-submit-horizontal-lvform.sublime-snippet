@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<div class="form-group">
+  <div class="col-lg-offset-2 col-lg-10">
+    {{ Form::submit('${1:submit}', array('class' => 'btn btn-default')) }}
+  </div>
+</div>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>lvform</tabTrigger>
+  <description>Laravel Form Submit Horizontal</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

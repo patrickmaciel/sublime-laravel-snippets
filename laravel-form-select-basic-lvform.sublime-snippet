@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[<div class="row">
+	<div class="form-group col-md-8 col-lg-6 {{ (isset(\$errors) AND \$errors->has('${1:field}')) ? 'has-error' : '' }}">
+  	{{ Form::label('${1:field}', '${2:label}') }}
+  	{{ Form::select('${1:field}', [0 => '${3:Selecione}'] + \$${4:var}, Input::old('${1:field}'${5}), ['class' => 'form-control'${6}])}}
+  	@include ('partials.input_validator', ['field' => '${1:field}'])
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lvformv</tabTrigger>
+	<description>Laravel Form Select TB Basic</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

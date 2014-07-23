@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<div class="form-group  {{ (isset(\$errors) AND \$errors->has('${1:field}')) ? 'has-error' : '' }}">
+	<div class="col-lg-offset-2 col-lg-10">
+		<div class="checkbox">
+			<label>{{ Form::checkbox('${1:field}', ${2:1}, true) }} ${3:label}</label>
+			@include('partials.validators.message_field', array('field' => '${1:field}'))
+		</div>
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lvform</tabTrigger>
+	<description>Laravel Form 1-Checkbox Horizontal</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
